@@ -7,7 +7,7 @@ const remaining = document.querySelector('.lastResult')
 const lowOrHi = document.querySelector('.lowOrHi')
 const startOver = document.querySelector('.resultParas')
 
-const p = document.createdElement('p');
+const p = document.createElement('p');
 
 let prevGuess = [];
 let numGuess = 1;
@@ -93,6 +93,11 @@ function newGame() {
     prevGuess=[]
     numGuess=1
     guessSlot.innerHTML = ''
+    remaining.innerHTML = `${10-numGuess}`
+    userInput.removeAttribute('disabled')
+    startOver.removeChild(p)
+
+    playGame = true
   })
 }
 
