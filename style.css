@@ -8,6 +8,7 @@ body {
   min-width: 480px;
   margin: 0 auto;
   background-color: #212121;
+  height: auto;
 }
 
 .lastResult {
@@ -42,6 +43,11 @@ button {
   margin-top: 50px;
 }
 
+.resultParas{
+  background: #474747;
+  padding: 10px;
+}
+
 #guessField {
   color: #000;
   width: 250px;
@@ -61,6 +67,7 @@ button {
 
 .guesses {
   background-color: #7a7a7a;
+
 }
 
 #wrapper {
